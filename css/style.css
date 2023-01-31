@@ -1,0 +1,33 @@
+/* Paleta de colores */
+Rosa Clarito: #EEE2DF
+Rosa Intermedio: #EED7C5
+Rosa Oscuro: #C89F9C
+/* Fuentes */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    background-color: #EEE2DF;
+}
+
+.header__logo {
+    width: 250px;
+}
+
+.header__menu a {
+    margin: 15px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
