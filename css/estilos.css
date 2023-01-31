@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo {
+    width: 250px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.footer__redes li {
+    display: inline;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.footer__titulo {
+    font-family: cursive;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.activo {
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form {
+    border: 2px dashed chocolate;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(194, 111, 2);
+}
+
+.imgPpal {
+    border: 3px solid black;
+}
