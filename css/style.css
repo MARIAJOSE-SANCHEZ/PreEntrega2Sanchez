@@ -68,14 +68,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #EED7C5;
 }
 
-.info-page{
-    width: 55vw;
-}
-
-.footer h3{
-    margin: 7px
+.footer article{
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .info-page p{
@@ -84,14 +82,29 @@ footer {
 }
 
 .seccion-redes {
-    width: 25vw;
+    /* width: 25vw; */
+    padding: 10px;
 }
 
 .seccion-redes h3{
     text-align: center;
-    padding: 6px;
+    /* padding: 6px; */
 }
 
 .seccion-redes a{
     margin: 10px;
 }
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    margin: 20px;
+    width: 190px;
+}
+ .eleccion input{
+    margin: 10px;
+    width: 80px;
+ }
