@@ -30,7 +30,6 @@ a {
     color: black;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,7 +46,7 @@ a {
     grid-area: banner;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 150%;
     object-fit: cover;
@@ -63,4 +62,36 @@ a {
 
 .prod-3 {
     grid-area: prod-3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-page{
+    width: 55vw;
+}
+
+.footer h3{
+    margin: 7px
+}
+
+.info-page p{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.seccion-redes {
+    width: 25vw;
+}
+
+.seccion-redes h3{
+    text-align: center;
+    padding: 6px;
+}
+
+.seccion-redes a{
+    margin: 10px;
 }
