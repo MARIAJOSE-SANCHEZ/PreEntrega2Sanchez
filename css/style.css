@@ -1,7 +1,5 @@
 /* Paleta de colores */
-Rosa Clarito: #EEE2DF
-Rosa Intermedio: #EED7C5
-Rosa Oscuro: #C89F9C
+Rosa Clarito: #EEE2DF Rosa Intermedio: #EED7C5 Rosa Oscuro: #C89F9C
 /* Fuentes */
 
 
@@ -10,7 +8,7 @@ Rosa Oscuro: #C89F9C
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
