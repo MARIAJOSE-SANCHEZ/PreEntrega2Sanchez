@@ -72,7 +72,6 @@ footer {
 }
 
 .footer article{
-    /* border: 1px solid black; */
     padding: 10px;
 }
 
@@ -107,4 +106,9 @@ footer {
  .eleccion input{
     margin: 10px;
     width: 80px;
+ }
+
+ .contacto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C89F9C;
  }
