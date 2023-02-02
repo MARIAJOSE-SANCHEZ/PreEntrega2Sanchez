@@ -4,150 +4,169 @@
     box-sizing: border-box;
 }
 
-
 /* Paleta de colores */
 Rosa Clarito #EEE2DF Rosa Intermedio #EED7C5 Rosa Oscuro #C89F9C
 /* Fuentes */
 
-
-
-body{
+body {
     margin: 0;
 }
 
+/* ---------------  MENU  -------------------- */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     background-color: #EEE2DF;
-    height: 15vh;
+    /* width: 100%; */
+    /* position: fixed; */
 }
 
 .logo {
-    width: 250px;
-}
-.main{
-    height: 70vh;
+    width: 270px;
 }
 
 .menu a {
     margin: 15px;
-    font-size: 18px;
-}
-
-a {
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
 
+/* ---------------  CONTENIDO PRINCIPAL  -------------------- */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 70vh;
-    border: 1px;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "banner banner banner"
-        "banner banner banner"
-        "prod-1 prod-2 prod-3"
-        "prod-1 prod-2 prod-3"
         "prod-1 prod-2 prod-3"
         "prod-1 prod-2 prod-3";
 }
 
 .banner {
     grid-area: banner;
-    height: 100%;
-    border: 1px solid black;
+
 }
 
 .banner img {
     width: 100%;
-    height: 80%;
+    height: 50%;
     object-fit: cover;
 }
 
 .prod-1 {
     grid-area: prod-1;
-    height: 100%;
-    border: 1px solid black;
 }
 
-.prod-1 img{
+.prod-1 img {
     width: 100%;
-    height: 75%;
+    height: 50%;
     object-fit: cover;
 }
 
 .prod-2 {
     grid-area: prod-2;
-    border: 1px solid black;
 }
 
-.prod-2 img{
+.prod-2 img {
     width: 100%;
-    height: 75%;
+    height: 50%;
     object-fit: cover;
 }
 
 .prod-3 {
     grid-area: prod-3;
-    border: 1px solid black;
 }
 
-.prod-3 img{
+.prod-3 img {
     width: 100%;
-    height: 75%;
+    height: 50%;
     object-fit: cover;
 }
 
+
+/* ---------------  FOOTER  -------------------- */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #EED7C5;
-    height: 15vh;
 }
 
-.footer article{
-    padding: 10px;
+footer section {
+    padding: 15px;
 }
 
-.info-page p{
-    margin: 5px;
+.info-page {
+    width: 55vw;
+}
+
+.info-page p {
+    margin: 4px;
     font-size: 15px;
 }
 
-.seccion-redes {
-    /* width: 25vw; */
-    padding: 10px;
-}
 
-.seccion-redes h3{
+.seccion-redes h3 {
     text-align: center;
-    /* padding: 6px; */
+    padding: 8px;
 }
 
-.seccion-redes a{
-    margin: 10px;
+.seccion-redes a {
+    margin: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
 }
 
-.formulario input{
+.formulario input {
     margin: 20px;
     width: 190px;
 }
- .eleccion input{
+
+.eleccion input {
     margin: 10px;
     width: 80px;
- }
+}
 
- .contacto {
+.contacto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #C89F9C;
- }
+}
+
+/* ---------------  RESPONSIVE  -------------------- */
+/* Dispositivo Mediano */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* position: fixed;
+        align-items: flex-start;
+        padding: 5px; */
+    }
+    .logo {
+        margin: 10px;
+    }
+    .seccion-redes{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        align-items: center
+    }
+
+    .seccion-redes a{
+        margin: 2px;
+        font-size: 15px;
+    }
+}
+
+/* Dispositivo Chico */
+@media (max-width: 420px) {}
