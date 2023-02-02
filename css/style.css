@@ -28,8 +28,8 @@ header {
 }
 
 .menu a {
-    margin: 15px;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 15px;
     text-decoration: none;
     color: black;
 }
@@ -38,55 +38,65 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "banner banner banner"
-        "prod-1 prod-2 prod-3"
-        "prod-1 prod-2 prod-3";
+        "banner banner banner banner"
+        "prod-1 prod-2 prod-3 prod-4"
+        "prod-1 prod-2 prod-3 prod-4";
+    /* height: 200vh; */
 }
 
 .banner {
     grid-area: banner;
-
 }
 
 .banner img {
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
 .prod-1 {
     grid-area: prod-1;
-}
-
-.prod-1 img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
+    background-color: #C89F9C;
 }
 
 .prod-2 {
     grid-area: prod-2;
-}
-
-.prod-2 img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
+    background-color: #C89F9C;
 }
 
 .prod-3 {
     grid-area: prod-3;
+    background-color: #C89F9C;
 }
 
-.prod-3 img {
+.prod-4 {
+    grid-area: prod-4;
+    background-color: #C89F9C;
+}
+
+.img-cover {
     width: 100%;
     height: 50%;
     object-fit: cover;
 }
 
+.nombre-prod {
+    font-size: 40px;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 25px;
+    text-align: center;
+}
+
+.container button {
+    font-size: 20px;
+    margin: 10px;
+}
 
 /* ---------------  FOOTER  -------------------- */
 footer {
@@ -109,7 +119,6 @@ footer section {
     font-size: 15px;
 }
 
-
 .seccion-redes h3 {
     text-align: center;
     padding: 8px;
@@ -122,25 +131,52 @@ footer section {
     color: black;
 }
 
+/* ------ pagina contacto ------ */
+
+.contenido-contacto {
+    display: flex;
+    flex-direction: column;
+    border: black dashed 1px;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.formulario span{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .formulario input {
     margin: 20px;
+    padding: 5px;
     width: 190px;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
 }
 
 .eleccion input {
-    margin: 10px;
-    width: 80px;
+    margin: 15px;
+    width: 20px;
 }
 
 .contacto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #C89F9C;
+    color: white;
+    padding: 20px;
+    background-color: rgb(196, 159, 155);
+    width: 100%;
+    text-align: center;
 }
+
 
 /* ---------------  RESPONSIVE  -------------------- */
 /* Dispositivo Mediano */
@@ -148,25 +184,96 @@ footer section {
     header {
         display: flex;
         flex-direction: column;
-        /* position: fixed;
-        align-items: flex-start;
-        padding: 5px; */
     }
+
     .logo {
         margin: 10px;
+        width: 300px;
     }
-    .seccion-redes{
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+
+    .seccion-redes {
         display: flex;
         flex-direction: column;
         width: 30vw;
         align-items: center
     }
 
-    .seccion-redes a{
+    .seccion-redes a {
         margin: 2px;
         font-size: 15px;
+    }
+
+    .container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "banner banner banner banner"
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-3 prod-3 prod-4 prod-4"
+            "prod-3 prod-3 prod-4 prod-4";
+        /* height: 300vh; */
+    }
+
+    /* pagina contacto */
+    .contenido-contacto{
+        background-image: url('');
     }
 }
 
 /* Dispositivo Chico */
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+    .logo {
+        margin: 15px;
+        width: 270px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "banner"
+            "prod-1"
+            "prod-2"
+            "prod-3"
+            "prod-4";
+    }
+
+    .nombre-prod {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .descripcion {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* pagina contacto */
+    .formulario span{
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .formulario input {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
