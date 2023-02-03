@@ -25,6 +25,7 @@ header {
 
 .logo {
     width: 270px;
+    box-shadow: 8px 7px 21px rgba(0, 0, 0, 0.349);
 }
 
 .menu a {
@@ -179,6 +180,13 @@ footer section {
     text-align: center;
 }
 
+input:focus {
+    background-color: hsl(209, 52%, 75%);
+    transition: .5s all;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
 
 /* ---------------  RESPONSIVE  -------------------- */
 /* Dispositivo Mediano */
@@ -232,6 +240,11 @@ footer section {
     .contenido-contacto {
         background-image: none;
         background-color: #c89f9c81;
+    }
+
+    input:focus {
+        background-color: hsl(282, 40%, 84%);
+        transition: .5s;
     }
 }
 
