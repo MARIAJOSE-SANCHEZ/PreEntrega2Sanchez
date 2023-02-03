@@ -28,7 +28,7 @@ header {
     box-shadow: 8px 7px 21px rgba(0, 0, 0, 0.349);
 }
 
-.menu a {
+.menu a{
     margin: 10px;
     font-size: 15px;
     text-decoration: none;
@@ -244,7 +244,7 @@ input:focus {
 
     input:focus {
         background-color: hsl(282, 40%, 84%);
-        transition: .5s;
+        transition: .5s all;
     }
 }
 
