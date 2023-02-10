@@ -35,6 +35,10 @@ header {
     color: black;
 }
 
+.navbar {
+    display: none;
+}
+
 /* ---------------  CONTENIDO PRINCIPAL  -------------------- */
 
 .container {
@@ -48,6 +52,9 @@ header {
     margin: 0;
     padding: 0;
 }
+ nav{
+    padding: 0 !important;
+ }
 
 .banner {
     grid-area: banner;
@@ -194,13 +201,20 @@ input:focus {
 /* Dispositivo Mediano */
 @media (max-width: 768px) {
     header {
-        display: flex;
-        flex-direction: column;
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .container-fluid{
+        background-color: #EEE2DF;
     }
 
     .logo {
         margin: 10px;
-        width: 300px;
+        width: 250px;
     }
 
     .menu {
@@ -213,7 +227,6 @@ input:focus {
         font-size: 18px;
         margin: 5px;
     }
-
 
     .seccion-redes {
         display: flex;
@@ -252,9 +265,23 @@ input:focus {
 
 /* Dispositivo Chico */
 @media (max-width: 420px) {
+    header {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
     .logo {
-        margin: 15px;
-        width: 270px;
+        margin: 5px;
+        width: 150px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .menu a {

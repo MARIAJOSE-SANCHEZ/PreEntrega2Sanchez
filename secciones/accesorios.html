@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>INDUMENTARIA</title>
 </head>
@@ -14,27 +17,97 @@
     <header class="header">
         <!-- logo -->
         <a href="../index.html">
-            <img class="logo" src="../recursos/img/LogoSiempreDiva.png" alt="Logo Siempre Diva">
+            <img class="logo wow animate__animated animate__bounce" src="../recursos/img/LogoSiempreDiva.png" alt="Logo Siempre Diva">
         </a>
         <!-- NAVEGACION -->
         <nav class="menu">
             <a href="./verano2023.html">VERANO 2023</a>
-            <a href="./lenceria.html">LENCERIA</a>
+            <a href="./bags.html">BAGS</a>
             <a href="./accesorios.html">ACCESORIOS</a>
             <a href="./contacto.html">CONTACTO</a>
         </nav>
     </header>
+
+    <!-- Encabezado 2 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <img class="logo wow animate__animated animate__bounce" src="../recursos/img/LogoSiempreDiva.png" alt="Logo Siempre Diva">
+            </a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./verano2023.html">VERANO
+                            2023</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bags.html">BAGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accesorios.html">ACCESORIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Contenido Ppal -->
     <main class="main">
-        <div class="container">
+        <section class="container">
             <div class="banner">
                 <img src="../recursos/img/Portada.png" alt="banner">
             </div>
-            <div class="prod-1"></div>
-            <div class="prod-2"></div>
-            <div class="prod-3"></div>
-        </div>
+            <article class="prod-1">
+                <img class="img-cover" src="../recursos/img/prod-accesorios/billeteramini.jpg" alt="billetera">
+                <section>
+                    <h3 class="nombre-prod">Billetera Petit</h3>
+                    <p class="descripcion">Billetera Mini Petit color suela.</p>
+                    <form action="#">
+                        <button>Ver mas</button>
+                    </form>
+                </section>
+            </article>
+            <article class="prod-2">
+                <img class="img-cover" src="../recursos/img/prod-accesorios/llaveros.jpg" alt="llaveros">
+                <section>
+                    <h3 class="nombre-prod">Llaveros</h3>
+                    <p class="descripcion">Diseño de la cinta sublimada a elección.</p>
+                    <form action="#">
+                        <button>Ver mas</button>
+                    </form>
+                </section>
+            </article>
+            <article class="prod-3">
+                <img class="img-cover" src="../recursos/img/prod-accesorios/matero.jpg" alt="matero">
+                <section>
+                    <h3 class="nombre-prod">Matero</h3>
+                    <p class="descripcion">Matero puff color negro.</p>
+                    <form action="#">
+                        <button>Ver mas</button>
+                    </form>
+                </section>
+            </article>
+            <article class="prod-4">
+                <img class="img-cover" src="../recursos/img/prod-accesorios/porta-celular.jpg" alt="porta celular">
+                <section>
+                    <h3 class="nombre-prod">Porta Celu Yamila</h3>
+                    <p class="descripcion">Porta Celular Yamila color negro.</p>
+                    <form action="#">
+                        <button>Ver mas</button>
+                    </form>
+                </section>
+            </article>
+        </section>
     </main>
+
     <!-- Pie de pagina -->
     <footer class="footer">
         <article class="info-page">
@@ -51,6 +124,14 @@
             <a href="mailto:sanchezmajo@gmail.com">Mail</a>
         </article>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
