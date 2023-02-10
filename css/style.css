@@ -10,6 +10,7 @@ Rosa Clarito #EEE2DF Rosa Intermedio #EED7C5 Rosa Oscuro #C89F9C
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* ---------------  MENU  -------------------- */
@@ -25,10 +26,9 @@ header {
 
 .logo {
     width: 270px;
-    box-shadow: 8px 7px 21px rgba(0, 0, 0, 0.349);
 }
 
-.menu a{
+.menu a {
     margin: 10px;
     font-size: 15px;
     text-decoration: none;
@@ -45,7 +45,8 @@ header {
         "banner banner banner banner"
         "prod-1 prod-2 prod-3 prod-4"
         "prod-1 prod-2 prod-3 prod-4";
-    /* height: 200vh; */
+    margin: 0;
+    padding: 0;
 }
 
 .banner {
@@ -80,22 +81,22 @@ header {
 
 .img-cover {
     width: 100%;
-    height: 50%;
+    height: 30%;
     object-fit: cover;
 }
 
 .nombre-prod {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
 .descripcion {
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
 }
 
 .container button {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px;
 }
 
@@ -145,13 +146,14 @@ footer section {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.formulario span{
+.formulario span {
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
@@ -281,10 +283,11 @@ input:focus {
     }
 
     /* pagina contacto */
-    .formulario span{
+    .formulario span {
         font-size: 20px;
         padding: 10px;
-        font-weight: normal;;
+        font-weight: normal;
+        ;
     }
 
     .formulario input {
